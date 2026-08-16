@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>杨翰宸 · 个人作品集</title>
+  <meta name="description" content="杨翰宸的个人作品集 —— 北京邮电大学信息工程专业，AI Agent 全栈开发 / 游戏开发方向" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">YHC<span class="brand-dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#experience">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-avatar">
+        <img src="assets/头像.png" alt="杨翰宸的头像" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-greet">你好，我是</p>
+        <h1 class="hero-name">杨翰宸</h1>
+        <p class="hero-title">北京邮电大学 · 人工智能学院 · 信息工程专业</p>
+        <p class="hero-sub">
+          热爱用代码构建有趣、可运行的产品 —— 从 AI Agent 全栈开发到经典游戏复刻，
+          追求「把想法变成能直接跑起来的东西」。
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">查看项目</a>
+          <a href="#contact" class="btn btn-ghost">联系我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            我是杨翰宸，北京邮电大学人工智能学院信息工程专业 2024 级本科生（2024–2028），
+            就读于国家级一流本科专业，绩点排名前 50%。
+          </p>
+          <p>
+            我的技术栈以 <strong>C++</strong> 为主，熟悉 <strong>Python</strong> 与汇编语言，
+            长期使用 Ubuntu、MATLAB、VS Code 开发。近年来专注 <strong>AI 应用</strong>：
+            熟练使用 Claude 等 AI 工具，具备大模型 API 接入与 <strong>AI Agent 全栈开发</strong>能力，
+            能独立完成从需求分析、框架设计到部署运维的完整流程。
+          </p>
+          <p>
+            除了工程能力，我也喜欢把经典的东西重新做一遍 —— 比如用 pygame 从零复刻并改进红白机时代的
+            <strong>坦克大战</strong>，从游戏循环、碰撞检测到敌人 AI，全部亲手实现。
+          </p>
+          <ul class="about-facts">
+            <li><span>🎓</span> 北京邮电大学 · 信息工程（本科在读）</li>
+            <li><span>🤖</span> AI Agent 全栈开发 · 大模型应用</li>
+            <li><span>🎮</span> 游戏开发（pygame / 游戏策划）</li>
+            <li><span>🇬🇧</span> CET-6</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <div class="avatar"><img src="assets/头像.png" alt="头像" /></div>
+          <h3>杨翰宸</h3>
+          <p class="muted">游戏开发 / AI 应用 / 软件工程</p>
+          <a href="#contact" class="btn btn-primary btn-sm">📧 联系我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">专业技能</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>💻 编程语言</h3>
+          <ul class="tag-list">
+            <li>C++ <em>熟练</em></li>
+            <li>Python</li>
+            <li>汇编语言</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>🤖 AI 与开发工具</h3>
+          <ul class="tag-list">
+            <li>Claude 等 AI 工具</li>
+            <li>大模型 API 接入</li>
+            <li>AI Agent 开发</li>
+            <li>VS Code / Git</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>🐧 开发环境</h3>
+          <ul class="tag-list">
+            <li>Ubuntu / Linux</li>
+            <li>MATLAB</li>
+            <li>pygame</li>
+            <li>北太天元平台</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>🔌 硬件与信号</h3>
+          <ul class="tag-list">
+            <li>模电 / 数电</li>
+            <li>Quartus II</li>
+            <li>STM32</li>
+            <li>信号测量</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">项目作品</h2>
+
+      <!-- 坦克大战：重点展示，含启动按钮 -->
+      <div class="project-featured">
+        <div class="project-featured-text">
+          <span class="badge">⭐ 主打项目 · 可直接运行</span>
+          <h3>坦克大战（Battle City 复刻改进）</h3>
+          <p>
+            使用 <strong>Python + pygame</strong> 独立复现并改进经典红白机游戏《坦克大战》，
+            实现了玩家移动射击、子弹与墙壁/坦克碰撞判定、计分与生命系统、多关卡与敌方 AI 追击逻辑，
+            以及主菜单、胜利/失败画面等完整游戏流程。打包为独立可执行文件，无需安装任何环境即可运行。
+          </p>
+          <ul class="project-points">
+            <li>完整游戏主循环与资源加载</li>
+            <li>二维数组地图 + 多关卡系统</li>
+            <li>敌方 AI（追击、对齐射击、绕障）</li>
+            <li>碰撞伤害、无敌帧、计分系统</li>
+          </ul>
+          <div class="project-actions">
+            <a href="assets/坦克大战.exe" download class="btn btn-primary">🚀 启动坦克大战游戏</a>
+            <span class="muted hint">点击下载「坦克大战.exe」，双击即可直接运行</span>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="game-preview">
+            <div class="game-preview-title">TANK WAR</div>
+            <div class="game-preview-tank">🛡️</div>
+            <div class="game-preview-bar"></div>
+            <div class="game-preview-caption">Python · pygame · 单文件可执行</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 其他项目 -->
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>🎮 AI 互动游戏策划</h3>
+          <span class="badge">北京蛐蛐科技 · 2026.05</span>
+          <p>
+            深度参与沉浸式 AI 互动游戏：市场调研、10 余款竞品分析、策划案与剧本模板设计；
+            参与核心模块设计（多世界线分支、角色记忆、语音交互、存档回溯、本地+云端存储），
+            并完成一个悬疑冒险 demo 剧本全流程设计。
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>📊 舆情预测应用</h3>
+          <span class="badge">团队项目</span>
+          <p>
+            基于北太天元平台，AI 协同完成程序基础代码与单元测试，参与多源数据导入与结果可视化模块，
+            协助调试运行流程，保障舆情扩散模拟功能，支撑科研教学演示场景。
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>📚 分类错题本程序</h3>
+          <span class="badge">团队项目 · TypeScript</span>
+          <p>
+            完成项目资料收集与 PPT 制作、需求调研与竞品分析报告；主导程序调试，
+            验证多错题本管理、标签分类、导出打印等核心模块，并代表团队完成成果演示汇报。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 经历 -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">实习经历</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>北京蛐蛐科技 · 游戏策划 + 技术运维</h3>
+            <span class="muted">2026.05</span>
+            <p>
+              参与 AI 互动游戏核心模块设计与早期设计流程，协同技术人员进行可行性分析，
+              搭建通用剧本框架，独立完成市场调研与竞品分析。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 教育 -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">教育背景</h2>
+      <div class="education-card">
+        <h3>北京邮电大学</h3>
+        <p class="muted">人工智能学院 · 信息工程专业 · 全日制本科（2024.09 – 2028.06）</p>
+        <ul class="project-points">
+          <li>国家级一流本科专业 / A+ 学科在读</li>
+          <li>绩点排名前 50%，无挂科及补考记录</li>
+          <li>人工智能与信息工程复合专业背景</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="section-sub">期待与你交流，欢迎通过以下方式联系我：</p>
+      <div class="contact-grid">
+        <a href="tel:17622635506" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <span>176 2263 5506</span>
+        </a>
+        <a href="mailto:yang_hn_cn@163.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <span>yang_hn_cn@163.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 杨翰宸 · 个人作品集</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
