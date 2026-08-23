@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>杨翰宸 · 个人作品集</title>
-  <meta name="description" content="杨翰宸的个人作品集 —— 北京邮电大学信息工程专业，AI Agent 全栈开发 / 游戏开发方向" />
+  <meta name="description" content="杨翰宸的个人作品集，北京邮电大学信息工程专业，AI 应用开发方向" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -33,8 +33,8 @@
         <h1 class="hero-name">杨翰宸</h1>
         <p class="hero-title">北京邮电大学 · 人工智能学院 · 信息工程专业</p>
         <p class="hero-sub">
-          热爱用代码构建有趣、可运行的产品 —— 从 AI Agent 全栈开发到经典游戏复刻，
-          追求「把想法变成能直接跑起来的东西」。
+          用 AI Agent 做全栈开发，也喜欢把经典游戏重做一遍。
+          下面几个项目都能实际运行，欢迎点开试试。
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">查看项目</a>
@@ -61,8 +61,8 @@
             能独立完成从需求分析、框架设计到部署运维的完整流程。
           </p>
           <p>
-            除了工程能力，我也喜欢把经典的东西重新做一遍 —— 比如用 pygame 从零复刻并改进红白机时代的
-            <strong>坦克大战</strong>，从游戏循环、碰撞检测到敌人 AI，全部亲手实现。
+            除了用 AI Agent 做完整产品，我也喜欢把经典的东西重做一遍 —— 比如用 pygame 复刻红白机时代的
+            <strong>坦克大战</strong>，游戏循环、碰撞检测到敌人 AI 都是自己写的。
           </p>
           <ul class="about-facts">
             <li><span>🎓</span> 北京邮电大学 · 信息工程（本科在读）</li>
@@ -74,7 +74,7 @@
         <div class="about-card">
           <div class="avatar"><img src="assets/头像.png" alt="头像" /></div>
           <h3>杨翰宸</h3>
-          <p class="muted">游戏开发 / AI 应用 / 软件工程</p>
+          <p class="muted">AI 应用开发 · 游戏开发</p>
           <a href="#contact" class="btn btn-primary btn-sm">📧 联系我</a>
         </div>
       </div>
@@ -131,15 +131,46 @@
     <div class="container">
       <h2 class="section-title">项目作品</h2>
 
+      <!-- 待办事项：重点展示，含在线体验 -->
+      <div class="project-featured">
+        <div class="project-featured-text">
+          <span class="badge">⭐ 主打项目 · 线上可访问</span>
+          <h3>待办事项管理系统</h3>
+          <p>
+            用 AI Agent 独立完成的全栈产品。前端纯原生 HTML/CSS/JS，后端 Supabase，桌面端 Electron，
+            零框架手写分层架构。做了 <strong>网页版、Windows 桌面版、多设备云同步</strong>三种形态，
+            桌面版支持开机自启和每日定时提醒。已经上线，注册个账号就能用，数据存在云端、换设备也能看到。
+          </p>
+          <ul class="project-points">
+            <li>网页版 + Windows 桌面版 + 云同步，三端共用一套代码</li>
+            <li>桌面端：开机自启、托盘常驻、每日定时系统通知（带提示音）</li>
+            <li>断网降级本地存储，核心功能不受影响</li>
+            <li>开源，GitHub 可下载桌面安装包</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://todo-exe.pages.dev" target="_blank" rel="noopener" class="btn btn-primary">🚀 在线体验</a>
+            <a href="https://github.com/YgHnCn/todo-exe" target="_blank" rel="noopener" class="btn btn-ghost">GitHub 仓库</a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="game-preview">
+            <div class="game-preview-title">TODO</div>
+            <div class="game-preview-tank">✅</div>
+            <div class="game-preview-bar"></div>
+            <div class="game-preview-caption">Web · Windows · 云同步</div>
+          </div>
+        </div>
+      </div>
+
       <!-- 坦克大战：重点展示，含启动按钮 -->
       <div class="project-featured">
         <div class="project-featured-text">
           <span class="badge">⭐ 主打项目 · 可直接运行</span>
           <h3>坦克大战（Battle City 复刻改进）</h3>
           <p>
-            使用 <strong>Python + pygame</strong> 独立复现并改进经典红白机游戏《坦克大战》，
-            实现了玩家移动射击、子弹与墙壁/坦克碰撞判定、计分与生命系统、多关卡与敌方 AI 追击逻辑，
-            以及主菜单、胜利/失败画面等完整游戏流程。打包为独立可执行文件，无需安装任何环境即可运行。
+            用 <strong>Python + pygame</strong> 重做了经典红白机游戏《坦克大战》，
+            玩家移动射击、子弹碰撞、计分生命、多关卡和敌人 AI 都自己实现，
+            打包成单个可执行文件，下载下来双击就能玩。
           </p>
           <ul class="project-points">
             <li>完整游戏主循环与资源加载</li>
@@ -168,25 +199,25 @@
           <h3>🎮 AI 互动游戏策划</h3>
           <span class="badge">北京蛐蛐科技 · 2026.05</span>
           <p>
-            深度参与沉浸式 AI 互动游戏：市场调研、10 余款竞品分析、策划案与剧本模板设计；
-            参与核心模块设计（多世界线分支、角色记忆、语音交互、存档回溯、本地+云端存储），
-            并完成一个悬疑冒险 demo 剧本全流程设计。
+            参与一款沉浸式 AI 互动游戏：做了市场调研和 10 多款竞品分析，写策划案、定剧本模板；
+            参与多世界线分支、角色记忆、语音交互、存档回溯这些核心模块的设计，
+            还写了一个悬疑冒险 demo 的完整剧本。
           </p>
         </div>
         <div class="project-card">
           <h3>📊 舆情预测应用</h3>
           <span class="badge">团队项目</span>
           <p>
-            基于北太天元平台，AI 协同完成程序基础代码与单元测试，参与多源数据导入与结果可视化模块，
-            协助调试运行流程，保障舆情扩散模拟功能，支撑科研教学演示场景。
+            团队项目，基于北太天元平台。负责基础代码和单元测试，参与了数据导入和结果可视化，
+            一起把舆情扩散模拟调通，用于科研教学的演示。
           </p>
         </div>
         <div class="project-card">
           <h3>📚 分类错题本程序</h3>
           <span class="badge">团队项目 · TypeScript</span>
           <p>
-            完成项目资料收集与 PPT 制作、需求调研与竞品分析报告；主导程序调试，
-            验证多错题本管理、标签分类、导出打印等核心模块，并代表团队完成成果演示汇报。
+            团队项目（TypeScript）。做了资料收集、需求调研和竞品分析，主导程序调试，
+            验证了多错题本管理、标签分类、导出打印这些核心功能，最后代表团队做了演示汇报。
           </p>
         </div>
       </div>
@@ -204,8 +235,8 @@
             <h3>北京蛐蛐科技 · 游戏策划 + 技术运维</h3>
             <span class="muted">2026.05</span>
             <p>
-              参与 AI 互动游戏核心模块设计与早期设计流程，协同技术人员进行可行性分析，
-              搭建通用剧本框架，独立完成市场调研与竞品分析。
+              参与 AI 互动游戏的核心模块和早期流程设计，和技术同事一起做可行性分析，
+              搭了通用剧本框架，自己完成了市场调研和竞品分析。
             </p>
           </div>
         </div>
